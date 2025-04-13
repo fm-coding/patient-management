@@ -1,0 +1,14 @@
+### Post request to create a patient
+POST http://localhost:4000/patients
+Content-Type: application/json
+
+{
+  "name": "Adan Abid",
+  "email": "fmwdwdw@111e",
+  "address": "332 street kuma",
+  "dateOfBirth": "2001-01-12",
+  "registeredDate": "2025-01-22"
+}
+
+
+###
