@@ -29,5 +29,4 @@ public class PatientRequestDTO {
 
     @NotBlank(groups = CreatePatientValidationGroup.class, message = "Registered date required")
     private String registeredDate;
-
 }
