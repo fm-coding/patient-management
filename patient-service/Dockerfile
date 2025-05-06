@@ -1,20 +1,25 @@
-FROM maven:3.9.9-eclipse-temurin-21 AS builder
+# Use a specific Maven image with Java 17 (matches your pom.xml)
+FROM maven:3.9.6-eclipse-temurin-17 AS builder
 
 WORKDIR /app
 
 COPY pom.xml .
 
+# Download dependencies first to leverage Docker cache
 RUN mvn dependency:go-offline -B
 
 COPY src ./src
 
-RUN mvn clean package
+# Build the application
+RUN mvn clean package -DskipTests
 
-FROM openjdk:23-jdk AS runner
+# Use the same Java version for runtime
+FROM eclipse-temurin:17-jre-jammy AS runner
 
 WORKDIR /app
 
-COPY --from=builder ./app/target/patient-service-0.0.1-SNAPSHOT.jar ./app.jar
+# Copy the built jar
+COPY --from=builder /app/target/patient-service-*.jar ./app.jar
 
 EXPOSE 4000
 
