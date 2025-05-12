@@ -3,9 +3,9 @@ POST http://localhost:4000/patients
 Content-Type: application/json
 
 {
-  "name": "Adan Mohamed with billing account",
-  "email": "testbilling@gmail.com",
-  "address": "332 street kuma",
+  "name": "Faisal Mohamed kafka test",
+  "email": "kafka_test123@example.com",
+  "address": "332 street nairobi",
   "dateOfBirth": "2001-01-12",
   "registeredDate": "2025-01-22"
 }
