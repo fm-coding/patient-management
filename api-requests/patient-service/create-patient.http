@@ -1,10 +1,10 @@
 ### Post request to create a patient
-POST http://localhost:4000/patients
+POST http://localhost:4004/api/patients
 Content-Type: application/json
 
 {
-  "name": "Faisal Mohamed kafka test",
-  "email": "kafka_test123@example.com",
+  "name": "Faisal Mohamed Adan",
+  "email": "kafka_test12223@example.com",
   "address": "332 street nairobi",
   "dateOfBirth": "2001-01-12",
   "registeredDate": "2025-01-22"
