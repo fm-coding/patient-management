@@ -63,6 +63,7 @@
         <module>analytics-service</module>
         <module>api-gateway</module>
         <module>auth-service</module>
+        <module>integration-tests</module>
 
     </modules>
 </project>
