@@ -31,6 +31,7 @@ public class PatientController {
         this.patientService = patientService;
     }
 
+    
     @GetMapping
     @Operation(summary = "Get Patients")
     public ResponseEntity<List<PatientResponseDTO>> getPatients() {

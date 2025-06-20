@@ -17,8 +17,6 @@ public class BillingServiceGrpcClient {
             BillingServiceGrpcClient.class);
     private final BillingServiceGrpc.BillingServiceBlockingStub blockingStub;
 
-    private static final Logger logger = LoggerFactory.getLogger(BillingServiceGrpcClient.class);
-
     public BillingServiceGrpcClient(
             @Value("${billing.service.address:localhost}") String serverAddress,
             @Value("${billing.service.grpc.port:9001}") int serverPort) {

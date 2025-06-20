@@ -5,7 +5,7 @@ Authorization: Bearer {{token}}
 
 {
   "name": "Faisal Mohamed Adan",
-  "email": "kafka_test5@example.com",
+  "email": "kafka_test535523@example.com",
   "address": "332 street nairobi",
   "dateOfBirth": "2001-01-12",
   "registeredDate": "2025-01-22"
